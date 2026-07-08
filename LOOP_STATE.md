@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after explainability-audit-documentation shipped)
+- `consecutive_dry_runs`: 0 (reset after signal-ensembling shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -32,6 +32,8 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] strategy-testing-validation (PR #22, 2026-07-08)
 - [x] small-account-execution (PR #23, 2026-07-08)
 - [x] explainability-audit-documentation (PR #24, 2026-07-08)
+- [x] signal-ensembling (PR #25, 2026-07-08) — added mid-loop, found via
+  fresh search after the seeded checklist was exhausted
 
 ## Log
 
@@ -62,3 +64,8 @@ rows here if a genuinely new category surfaces mid-loop.
   instructions) before it can conclude there's nothing left to add —
   finding nothing new on that search is what should start counting as a
   dry run, not this milestone itself.
+- 2026-07-08: seeded checklist exhausted, so searched fresh for a new
+  category. Found signal-ensembling (combining multiple models'/signals'
+  predictions via voting/blending/stacking) — distinct from picking a
+  single model and from portfolio-level capital allocation, both already
+  covered. Shipped as PR #25.
