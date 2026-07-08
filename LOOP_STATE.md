@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after alternative-data-ingestion shipped)
+- `consecutive_dry_runs`: 0 (reset after regime-detection shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -26,7 +26,7 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] position-sizing-risk-management (PR #16, 2026-07-08)
 - [x] portfolio-construction-small-capital (PR #17, 2026-07-08)
 - [x] alternative-data-ingestion (PR #18, 2026-07-08)
-- [ ] regime-detection
+- [x] regime-detection (PR #19, 2026-07-08)
 - [ ] live-backtest-drift-monitoring
 - [ ] quant-experiment-tracking
 - [ ] strategy-testing-validation
@@ -51,3 +51,4 @@ rows here if a genuinely new category surfaces mid-loop.
 - 2026-07-08: shipped position-sizing-risk-management as PR #16.
 - 2026-07-08: shipped portfolio-construction-small-capital as PR #17.
 - 2026-07-08: shipped alternative-data-ingestion as PR #18.
+- 2026-07-08: shipped regime-detection as PR #19.
