@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after event-driven-backtesting-engine-architecture shipped)
+- `consecutive_dry_runs`: 0 (reset after trend-following-momentum shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -41,6 +41,9 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] statistical-arbitrage-pairs-trading (PR #28, 2026-07-08) — added
   mid-loop, found via a fourth fresh search
 - [x] event-driven-backtesting-engine-architecture (PR #29, 2026-07-08)
+- [x] trend-following-momentum (PR #30, 2026-07-08) — added mid-loop, found
+  via a fifth fresh search; directional counterpart to
+  statistical-arbitrage-pairs-trading
 
 ## Log
 
@@ -105,3 +108,9 @@ rows here if a genuinely new category surfaces mid-loop.
   architecture candidate directly (no fresh search needed this firing).
   Shipped as PR #29. No new candidates queued this round — next firing
   will need a fresh search again.
+- 2026-07-08: searched again (checklist fully covered again). Found
+  trend-following-momentum (time-series momentum, moving-average
+  crossovers, breakout systems, with whipsaw/regime-filter guardrails) —
+  the directional counterpart to statistical-arbitrage-pairs-trading,
+  completing the classic mean-reversion/trend-following pairing already
+  referenced in portfolio-construction-small-capital. Shipped as PR #30.
