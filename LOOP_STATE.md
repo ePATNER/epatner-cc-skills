@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0
+- `consecutive_dry_runs`: 0 (reset after news-sentiment-analysis shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -17,7 +17,7 @@ Mark each `[ ]` → `[x] skill-name (PR #N, YYYY-MM-DD)` once covered. Order is
 not fixed — pick whichever is most promising to research next, and add new
 rows here if a genuinely new category surfaces mid-loop.
 
-- [ ] news-sentiment-analysis
+- [x] news-sentiment-analysis (PR #10, 2026-07-08)
 - [ ] deep-learning-forecasting-models
 - [ ] classical-statistical-forecasting
 - [ ] financial-feature-engineering
@@ -39,3 +39,6 @@ rows here if a genuinely new category surfaces mid-loop.
 - (init) cron_job_id 65b6d83e recorded. NOTE: this job is session-only —
   it dies if the scheduling session closes, it is not a durable cloud
   schedule. If a firing ever fails to happen, that's why.
+- 2026-07-08: shipped news-sentiment-analysis as PR #10 (manual first
+  iteration, run immediately at loop setup rather than waiting for the
+  first cron fire).
