@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after statistical-arbitrage-pairs-trading shipped)
+- `consecutive_dry_runs`: 0 (reset after event-driven-backtesting-engine-architecture shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -40,11 +40,7 @@ rows here if a genuinely new category surfaces mid-loop.
   third fresh search
 - [x] statistical-arbitrage-pairs-trading (PR #28, 2026-07-08) — added
   mid-loop, found via a fourth fresh search
-- [ ] event-driven-backtesting-engine-architecture — candidate noted during
-  the fourth search (vectorized vs. event-driven simulator design,
-  lookahead-safe architecture) but not yet built; distinct from
-  purged-cv-backtesting (statistical validation) and
-  strategy-testing-validation (code correctness) — worth picking up next.
+- [x] event-driven-backtesting-engine-architecture (PR #29, 2026-07-08)
 
 ## Log
 
@@ -105,3 +101,7 @@ rows here if a genuinely new category surfaces mid-loop.
   from statistical validation and code-correctness testing). Shipped the
   former as PR #28 and added the latter as an explicit unchecked checklist
   row so the next firing doesn't need to search from scratch.
+- 2026-07-08: picked up the queued event-driven-backtesting-engine-
+  architecture candidate directly (no fresh search needed this firing).
+  Shipped as PR #29. No new candidates queued this round — next firing
+  will need a fresh search again.
