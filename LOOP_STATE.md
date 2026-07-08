@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after signal-ensembling shipped)
+- `consecutive_dry_runs`: 0 (reset after market-microstructure-signals shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -34,6 +34,8 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] explainability-audit-documentation (PR #24, 2026-07-08)
 - [x] signal-ensembling (PR #25, 2026-07-08) — added mid-loop, found via
   fresh search after the seeded checklist was exhausted
+- [x] market-microstructure-signals (PR #26, 2026-07-08) — added mid-loop,
+  found via a second fresh search
 
 ## Log
 
@@ -69,3 +71,10 @@ rows here if a genuinely new category surfaces mid-loop.
   predictions via voting/blending/stacking) — distinct from picking a
   single model and from portfolio-level capital allocation, both already
   covered. Shipped as PR #25.
+- 2026-07-08: searched again (checklist fully covered again). Found
+  market-microstructure-signals (order-flow imbalance / VPIN-style
+  toxicity / spread dynamics from order-book data) — distinct from price-
+  series feature engineering and from external text/alt-data sources.
+  Walk-forward/hyperparameter-tuning was also considered but rejected as
+  not genuinely new (already covered under purged-cv-backtesting). Shipped
+  microstructure skill as PR #26.
