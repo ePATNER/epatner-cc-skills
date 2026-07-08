@@ -16,6 +16,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`test-driven-development`](skills/test-driven-development/SKILL.md) | RED → GREEN → REFACTOR: write the failing test before the implementation. |
 
 ## Layout
 
