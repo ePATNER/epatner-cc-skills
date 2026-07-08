@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after strategy-testing-validation shipped)
+- `consecutive_dry_runs`: 0 (reset after small-account-execution shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -30,7 +30,7 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] live-backtest-drift-monitoring (PR #20, 2026-07-08)
 - [x] quant-experiment-tracking (PR #21, 2026-07-08)
 - [x] strategy-testing-validation (PR #22, 2026-07-08)
-- [ ] small-account-execution
+- [x] small-account-execution (PR #23, 2026-07-08)
 - [ ] explainability-audit-documentation
 
 ## Log
@@ -55,3 +55,4 @@ rows here if a genuinely new category surfaces mid-loop.
 - 2026-07-08: shipped live-backtest-drift-monitoring as PR #20.
 - 2026-07-08: shipped quant-experiment-tracking as PR #21.
 - 2026-07-08: shipped strategy-testing-validation as PR #22.
+- 2026-07-08: shipped small-account-execution as PR #23.
