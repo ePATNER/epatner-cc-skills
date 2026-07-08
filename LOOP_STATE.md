@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after tail-risk-hedging shipped)
+- `consecutive_dry_runs`: 0 (reset after statistical-arbitrage-pairs-trading shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -38,6 +38,13 @@ rows here if a genuinely new category surfaces mid-loop.
   found via a second fresh search
 - [x] tail-risk-hedging (PR #27, 2026-07-08) — added mid-loop, found via a
   third fresh search
+- [x] statistical-arbitrage-pairs-trading (PR #28, 2026-07-08) — added
+  mid-loop, found via a fourth fresh search
+- [ ] event-driven-backtesting-engine-architecture — candidate noted during
+  the fourth search (vectorized vs. event-driven simulator design,
+  lookahead-safe architecture) but not yet built; distinct from
+  purged-cv-backtesting (statistical validation) and
+  strategy-testing-validation (code correctness) — worth picking up next.
 
 ## Log
 
@@ -90,3 +97,11 @@ rows here if a genuinely new category surfaces mid-loop.
   neither prescribes a dedicated hedge for it). Shipped as PR #27.
   Categories are getting harder to find without overlap; a dry run is
   plausible on an upcoming firing.
+- 2026-07-08: searched again (checklist fully covered again). Found two
+  strong candidates: statistical-arbitrage-pairs-trading (a concrete
+  strategy family — cointegration-based mean reversion — distinct in kind
+  from the methodology/infrastructure skills shipped so far) and
+  event-driven-backtesting-engine-architecture (simulator design distinct
+  from statistical validation and code-correctness testing). Shipped the
+  former as PR #28 and added the latter as an explicit unchecked checklist
+  row so the next firing doesn't need to search from scratch.
