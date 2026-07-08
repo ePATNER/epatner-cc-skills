@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after market-microstructure-signals shipped)
+- `consecutive_dry_runs`: 0 (reset after tail-risk-hedging shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -36,6 +36,8 @@ rows here if a genuinely new category surfaces mid-loop.
   fresh search after the seeded checklist was exhausted
 - [x] market-microstructure-signals (PR #26, 2026-07-08) — added mid-loop,
   found via a second fresh search
+- [x] tail-risk-hedging (PR #27, 2026-07-08) — added mid-loop, found via a
+  third fresh search
 
 ## Log
 
@@ -78,3 +80,13 @@ rows here if a genuinely new category surfaces mid-loop.
   Walk-forward/hyperparameter-tuning was also considered but rejected as
   not genuinely new (already covered under purged-cv-backtesting). Shipped
   microstructure skill as PR #26.
+- 2026-07-08: searched again (checklist fully covered again). Considered
+  RL-based optimal execution but rejected it as overlapping too much with
+  small-account-execution/market-microstructure-signals and impractical at
+  small-capital scale (needs multi-agent market simulators). Found
+  tail-risk-hedging instead — explicit correlation-breakdown protection,
+  distinct from normal-times position sizing and portfolio diversification
+  (both of which already note correlation isn't stable in stress, but
+  neither prescribes a dedicated hedge for it). Shipped as PR #27.
+  Categories are getting harder to find without overlap; a dry run is
+  plausible on an upcoming firing.
