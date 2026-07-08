@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after news-sentiment-analysis shipped)
+- `consecutive_dry_runs`: 0 (reset after deep-learning-forecasting-models shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -18,7 +18,7 @@ not fixed — pick whichever is most promising to research next, and add new
 rows here if a genuinely new category surfaces mid-loop.
 
 - [x] news-sentiment-analysis (PR #10, 2026-07-08)
-- [ ] deep-learning-forecasting-models
+- [x] deep-learning-forecasting-models (PR #11, 2026-07-08)
 - [ ] classical-statistical-forecasting
 - [ ] financial-feature-engineering
 - [ ] purged-cv-backtesting
@@ -42,3 +42,5 @@ rows here if a genuinely new category surfaces mid-loop.
 - 2026-07-08: shipped news-sentiment-analysis as PR #10 (manual first
   iteration, run immediately at loop setup rather than waiting for the
   first cron fire).
+- 2026-07-08: shipped deep-learning-forecasting-models as PR #11 (first
+  cron-fired iteration).
