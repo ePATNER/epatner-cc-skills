@@ -16,6 +16,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`receiving-code-review`](skills/receiving-code-review/SKILL.md) | Triage review feedback by validity/scope instead of blindly applying or ignoring it. |
 
 ## Layout
 
