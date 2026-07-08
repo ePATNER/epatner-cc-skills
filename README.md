@@ -16,6 +16,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`subagent-driven-development`](skills/subagent-driven-development/SKILL.md) | Hand a planned step to a fresh implementer subagent, then a fresh reviewer subagent, for a clean-room result. |
 
 ## Layout
 
