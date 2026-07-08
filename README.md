@@ -2,6 +2,8 @@
 
 Personal collection of [Claude Code](https://code.claude.com) skills.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Each skill lives under `skills/<name>/` with a `SKILL.md` (instructions +
 frontmatter) and any supporting `assets/`. Skills are made discoverable to
 Claude Code by symlinking them into `~/.claude/skills/`:
@@ -33,3 +35,14 @@ skills/
     SKILL.md        # name + description frontmatter, then instructions
     assets/         # scripts / templates the skill installs or references
 ```
+
+## Contributing
+
+Each skill is added on its own branch (`epatner/add-<name>-skill`) and merged
+via a squash-merged PR titled `epatner: add <name> skill`. See
+[`skills/skill-creator/SKILL.md`](skills/skill-creator/SKILL.md) for the
+process and conventions to follow when drafting a new one.
+
+## License
+
+[MIT](LICENSE) © epatner
