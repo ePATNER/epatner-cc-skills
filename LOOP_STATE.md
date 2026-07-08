@@ -4,7 +4,7 @@ Internal bookkeeping for the recurring research loop that opens draft skill
 PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
-- `cron_job_id`: PENDING
+- `cron_job_id`: 65b6d83e
 - `consecutive_dry_runs`: 0
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
@@ -35,4 +35,7 @@ rows here if a genuinely new category surfaces mid-loop.
 
 ## Log
 
-- (init) State branch created, checklist seeded, cron job about to be created.
+- (init) State branch created, checklist seeded.
+- (init) cron_job_id 65b6d83e recorded. NOTE: this job is session-only —
+  it dies if the scheduling session closes, it is not a durable cloud
+  schedule. If a firing ever fails to happen, that's why.
