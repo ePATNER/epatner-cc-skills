@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after position-sizing-risk-management shipped)
+- `consecutive_dry_runs`: 0 (reset after portfolio-construction-small-capital shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -24,7 +24,7 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] purged-cv-backtesting (PR #14, 2026-07-08)
 - [x] transaction-cost-slippage-modeling (PR #15, 2026-07-08)
 - [x] position-sizing-risk-management (PR #16, 2026-07-08)
-- [ ] portfolio-construction-small-capital
+- [x] portfolio-construction-small-capital (PR #17, 2026-07-08)
 - [ ] alternative-data-ingestion
 - [ ] regime-detection
 - [ ] live-backtest-drift-monitoring
@@ -49,3 +49,4 @@ rows here if a genuinely new category surfaces mid-loop.
 - 2026-07-08: shipped purged-cv-backtesting as PR #14.
 - 2026-07-08: shipped transaction-cost-slippage-modeling as PR #15.
 - 2026-07-08: shipped position-sizing-risk-management as PR #16.
+- 2026-07-08: shipped portfolio-construction-small-capital as PR #17.
