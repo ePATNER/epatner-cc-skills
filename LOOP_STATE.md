@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after classical-statistical-forecasting shipped)
+- `consecutive_dry_runs`: 0 (reset after financial-feature-engineering shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -20,7 +20,7 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] news-sentiment-analysis (PR #10, 2026-07-08)
 - [x] deep-learning-forecasting-models (PR #11, 2026-07-08)
 - [x] classical-statistical-forecasting (PR #12, 2026-07-08)
-- [ ] financial-feature-engineering
+- [x] financial-feature-engineering (PR #13, 2026-07-08)
 - [ ] purged-cv-backtesting
 - [ ] transaction-cost-slippage-modeling
 - [ ] position-sizing-risk-management
@@ -45,3 +45,4 @@ rows here if a genuinely new category surfaces mid-loop.
 - 2026-07-08: shipped deep-learning-forecasting-models as PR #11 (first
   cron-fired iteration).
 - 2026-07-08: shipped classical-statistical-forecasting as PR #12.
+- 2026-07-08: shipped financial-feature-engineering as PR #13.
