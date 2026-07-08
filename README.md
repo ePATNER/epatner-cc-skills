@@ -17,6 +17,9 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
 | [`systematic-debugging`](skills/systematic-debugging/SKILL.md) | Root-cause-first bug investigation: reproduce → localize → root-cause → minimal fix → verify. |
+| [`writing-plans`](skills/writing-plans/SKILL.md) | Break a multi-file feature/migration into small, independently verifiable steps before coding. |
+| [`brainstorming`](skills/brainstorming/SKILL.md) | Refine an ambiguous request into an agreed design through targeted questions before writing any code. |
+| [`skill-creator`](skills/skill-creator/SKILL.md) | Guidance for drafting a new SKILL.md that actually triggers and gets followed. |
 
 ## Layout
 
