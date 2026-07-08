@@ -16,6 +16,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`using-git-worktrees`](skills/using-git-worktrees/SKILL.md) | Set up/tear down git worktrees to work on two branches at once without disturbing the current checkout. |
 
 ## Layout
 
