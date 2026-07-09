@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after merger-arbitrage shipped)
+- `consecutive_dry_runs`: 0 (reset after dividend-capture shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -78,12 +78,7 @@ rows here if a genuinely new category surfaces mid-loop.
   fourteenth fresh search; eighth strategy archetype, distinct because the
   return driver is binary corporate-event completion risk, unlike any
   other archetype covered
-- [ ] dividend-capture — candidate noted during the thirteenth search
-  (ex-dividend mechanical price drop, T+2 settlement lag, 60-day holding
-  period tax rule) but deprioritized: the core lesson ("apparent edge
-  erased by realistic costs/taxes") would be a third repetition of the
-  pattern already made by post-earnings-announcement-drift and
-  options-income-strategies. Revisit only if nothing more novel turns up.
+- [x] dividend-capture (PR #43, 2026-07-09)
 
 ## Log
 
@@ -260,3 +255,13 @@ rows here if a genuinely new category surfaces mid-loop.
   (deal-completion-risk spread capture) — a genuinely new risk driver
   (binary corporate-event completion risk) not resembling any prior
   archetype. Shipped as PR #42. 33 skills shipped total.
+- 2026-07-09: searched again. Considered short-interest/squeeze signals
+  (rejected — current research explicitly flags these as unreliable
+  standalone predictors, rare/catalyst-driven/speculative) and
+  convertible bond arbitrage (rejected — requires bond-market access and
+  dynamic delta-hedging infrastructure poorly suited to small/retail
+  capital). Fell back to the previously-queued, deprioritized
+  dividend-capture candidate: mechanically distinct and retail-accessible
+  even though its core lesson (frictions erase a near-zero mechanical
+  edge) rhymes with post-earnings-announcement-drift and
+  options-income-strategies. Shipped as PR #43. 34 skills shipped total.
