@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after dividend-capture shipped)
+- `consecutive_dry_runs`: 0 (reset after yield-curve-relative-value shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -79,6 +79,10 @@ rows here if a genuinely new category surfaces mid-loop.
   return driver is binary corporate-event completion risk, unlike any
   other archetype covered
 - [x] dividend-capture (PR #43, 2026-07-09)
+- [x] yield-curve-relative-value (PR #44, 2026-07-09) — added mid-loop,
+  found via a fifteenth fresh search; new strategy dimension (interest-
+  rate term structure / duration / curve-shape risk), distinct from every
+  equity/crypto/commodity archetype already covered
 
 ## Log
 
@@ -265,3 +269,13 @@ rows here if a genuinely new category surfaces mid-loop.
   even though its core lesson (frictions erase a near-zero mechanical
   edge) rhymes with post-earnings-announcement-drift and
   options-income-strategies. Shipped as PR #43. 34 skills shipped total.
+- 2026-07-09: searched again (checklist fully covered again). Considered
+  crypto liquidation-cascade/leverage signals but deprioritized as largely
+  a crypto-flavored elaboration of concepts already covered
+  (market-microstructure-signals' toxicity/order-flow content,
+  tail-risk-hedging's stress-monitoring content) rather than a new
+  mechanism. Found yield-curve-relative-value instead (steepener/
+  flattener and roll-down/carry trades on the interest-rate term
+  structure) — a genuinely new strategy dimension (duration/curve-shape
+  risk) not present in any equity/crypto/commodity archetype covered so
+  far. Shipped as PR #44. 35 skills shipped total.
