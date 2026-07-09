@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`options-income-strategies`](skills/options-income-strategies/SKILL.md) | _(draft, pending review)_ Systematic premium-selling (covered calls, credit spreads, capital-efficient variants) with the negative-skew risk profile made explicit. |
 | [`subagent-driven-development`](skills/subagent-driven-development/SKILL.md) | Hand a planned step to a fresh implementer subagent, then a fresh reviewer subagent, for a clean-room result. |
 | [`using-git-worktrees`](skills/using-git-worktrees/SKILL.md) | Set up/tear down git worktrees to work on two branches at once without disturbing the current checkout. |
 | [`receiving-code-review`](skills/receiving-code-review/SKILL.md) | Triage review feedback by validity/scope instead of blindly applying or ignoring it. |
