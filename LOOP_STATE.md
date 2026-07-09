@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after cross-sectional-equity-factor-investing shipped)
+- `consecutive_dry_runs`: 0 (reset after options-income-strategies shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -55,6 +55,14 @@ rows here if a genuinely new category surfaces mid-loop.
   via a seventh fresh search; LLM-driven/evolutionary candidate-signal
   search as its own meta-process, distinct from any single technique
 - [x] cross-sectional-equity-factor-investing (PR #34, 2026-07-09)
+- [x] options-income-strategies (PR #35, 2026-07-09) — added mid-loop,
+  found via an eighth fresh search; fourth strategy archetype
+  (short-volatility/theta harvesting)
+- [ ] synthetic-financial-data-augmentation — candidate noted during the
+  eighth search (GAN/diffusion-model-generated synthetic time series to
+  mitigate limited real historical data, complementing
+  deep-learning-forecasting-models' data-volume-vs-model-size guidance)
+  but not yet built; worth picking up next.
 
 ## Log
 
@@ -158,3 +166,11 @@ rows here if a genuinely new category surfaces mid-loop.
   #34. No new candidates queued this round — next firing will need a
   fresh search again. 25 skills shipped total; the checklist has grown
   well beyond its original 15-item seed via mid-loop discovery.
+- 2026-07-09: searched again (checklist fully covered again). Found
+  options-income-strategies (covered calls, cash-secured puts, credit
+  spreads, capital-efficient variants) — a fourth strategy archetype
+  (short-volatility/theta harvesting), with heavy emphasis on the
+  negative-skew risk profile the whole family shares. Shipped as PR #35.
+  Also noted synthetic-financial-data-augmentation (GAN/diffusion-model
+  generated synthetic time series for data-scarce training) as a queued
+  candidate for next time.
