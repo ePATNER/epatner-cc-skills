@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after funding-rate-arbitrage shipped)
+- `consecutive_dry_runs`: 0 (reset after model-retraining-cadence shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -47,6 +47,10 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] funding-rate-arbitrage (PR #31, 2026-07-09) — added mid-loop, found
   via a sixth fresh search; third strategy archetype (carry/basis) beside
   reversion and continuation
+- [x] model-retraining-cadence (PR #32, 2026-07-09) — the previously-
+  deferred candidate, now built; ongoing model maintenance/update
+  pipeline, distinct from the kill-switch decision in
+  live-backtest-drift-monitoring
 
 ## Log
 
@@ -128,3 +132,12 @@ rows here if a genuinely new category surfaces mid-loop.
   with live-backtest-drift-monitoring and needs a clearer differentiation
   before it's worth a separate skill — worth revisiting if a future
   firing can't find anything better.
+- 2026-07-09: searched again (checklist fully covered again). Considered
+  global-systematic-macro but rejected it as too redundant with
+  trend-following-momentum + funding-rate-arbitrage (mostly reapplies
+  momentum/carry factors to FX/rates/commodities rather than a new
+  technique). Instead revisited the previously-deferred
+  model-retraining-cadence candidate with a clearer differentiation now
+  in hand (retraining = routine maintenance of a sound model;
+  live-backtest-drift-monitoring = deciding whether the strategy itself is
+  still sound). Shipped as PR #32.
