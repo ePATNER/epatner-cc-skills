@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after model-retraining-cadence shipped)
+- `consecutive_dry_runs`: 0 (reset after automated-alpha-mining shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -51,6 +51,15 @@ rows here if a genuinely new category surfaces mid-loop.
   deferred candidate, now built; ongoing model maintenance/update
   pipeline, distinct from the kill-switch decision in
   live-backtest-drift-monitoring
+- [x] automated-alpha-mining (PR #33, 2026-07-09) — added mid-loop, found
+  via a seventh fresh search; LLM-driven/evolutionary candidate-signal
+  search as its own meta-process, distinct from any single technique
+- [ ] cross-sectional-equity-factor-investing — candidate noted during the
+  seventh search (rank many instruments against each other — value/
+  quality/size deciles, long top rank/short bottom rank — distinct from
+  the time-series signals in trend-following-momentum and
+  statistical-arbitrage-pairs-trading) but not yet built; worth picking up
+  next.
 
 ## Log
 
@@ -141,3 +150,11 @@ rows here if a genuinely new category surfaces mid-loop.
   in hand (retraining = routine maintenance of a sound model;
   live-backtest-drift-monitoring = deciding whether the strategy itself is
   still sound). Shipped as PR #32.
+- 2026-07-09: searched again (checklist fully covered again). Found two
+  candidates: automated-alpha-mining (LLM-driven/evolutionary candidate-
+  signal search, a meta-process distinct from any single technique already
+  covered, and unusually well-matched to this operation since the
+  researcher here is itself an LLM) and cross-sectional-equity-factor-
+  investing (rank instruments against each other rather than forecasting
+  each individually). Shipped the former as PR #33; queued the latter as
+  an explicit unchecked row for next time.
