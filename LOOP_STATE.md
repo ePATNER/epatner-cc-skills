@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after trend-following-momentum shipped)
+- `consecutive_dry_runs`: 0 (reset after funding-rate-arbitrage shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -44,6 +44,9 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] trend-following-momentum (PR #30, 2026-07-08) — added mid-loop, found
   via a fifth fresh search; directional counterpart to
   statistical-arbitrage-pairs-trading
+- [x] funding-rate-arbitrage (PR #31, 2026-07-09) — added mid-loop, found
+  via a sixth fresh search; third strategy archetype (carry/basis) beside
+  reversion and continuation
 
 ## Log
 
@@ -114,3 +117,14 @@ rows here if a genuinely new category surfaces mid-loop.
   the directional counterpart to statistical-arbitrage-pairs-trading,
   completing the classic mean-reversion/trend-following pairing already
   referenced in portfolio-construction-small-capital. Shipped as PR #30.
+- 2026-07-09: searched again (checklist fully covered again). Found two
+  candidates: funding-rate-arbitrage/cash-and-carry (a third strategy
+  archetype — delta-neutral carry — distinct from reversion and
+  continuation) and model-retraining-cadence/concept-drift-adaptation
+  (adaptive retraining as an alternative response to drift, vs. the
+  kill-switch/retire response already covered in
+  live-backtest-drift-monitoring). Shipped funding-rate-arbitrage as PR
+  #31; deferred the retraining-cadence one since it overlaps meaningfully
+  with live-backtest-drift-monitoring and needs a clearer differentiation
+  before it's worth a separate skill — worth revisiting if a future
+  firing can't find anything better.
