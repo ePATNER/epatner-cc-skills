@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 1 (dry run 2026-07-09 — see log)
+- `consecutive_dry_runs`: 0 (reset after commodity-seasonality shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -70,6 +70,16 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] macro-nowcasting-economic-surprises (PR #40, 2026-07-09) — added
   mid-loop, found via an eleventh fresh search; distinct signal domain
   (macro/FX/rates, not company-specific)
+- [x] commodity-seasonality (PR #41, 2026-07-09) — added mid-loop, found
+  via a thirteenth fresh search; seventh strategy archetype, distinct
+  because it's grounded in physical supply/demand cycles rather than a
+  price relationship, fund flow, drift, or behavioral effect
+- [ ] dividend-capture — candidate noted during the thirteenth search
+  (ex-dividend mechanical price drop, T+2 settlement lag, 60-day holding
+  period tax rule) but deprioritized: the core lesson ("apparent edge
+  erased by realistic costs/taxes") would be a third repetition of the
+  pattern already made by post-earnings-announcement-drift and
+  options-income-strategies. Revisit only if nothing more novel turns up.
 
 ## Log
 
@@ -230,3 +240,11 @@ rows here if a genuinely new category surfaces mid-loop.
   largely arbitraged away or inconsistent (the January effect specifically
   reported as having "vanished" in multiple sources), too thin a
   foundation for a substantive new skill. consecutive_dry_runs now 1/15.
+- 2026-07-09: recovered from the dry run. Found commodity-seasonality
+  (physically-grounded harvest/heating/inventory-cycle patterns) —
+  explicitly distinguished from the rejected equity calendar anomalies by
+  requiring an identifiable physical driver, not just a historical
+  statistical pattern. Shipped as PR #41. Noted dividend-capture as a
+  lower-priority candidate (mechanically distinct but a third repetition
+  of the "costs/taxes erase the naive edge" lesson). 32 skills shipped
+  total.
