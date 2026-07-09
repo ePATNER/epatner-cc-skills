@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after post-earnings-announcement-drift shipped)
+- `consecutive_dry_runs`: 0 (reset after index-reconstitution-effect shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -63,6 +63,10 @@ rows here if a genuinely new category surfaces mid-loop.
   found via a ninth fresh search; fills a real operational-security gap
   none of the prior 27 skills addressed
 - [x] post-earnings-announcement-drift (PR #38, 2026-07-09)
+- [x] index-reconstitution-effect (PR #39, 2026-07-09) — added mid-loop,
+  found via a tenth fresh search; sixth strategy archetype, distinct
+  because it's driven by forced fund-flow mechanics rather than a price
+  relationship, trend, carry, volatility, or news
 
 ## Log
 
@@ -191,3 +195,14 @@ rows here if a genuinely new category surfaces mid-loop.
   #38, with heavy emphasis on the documented illiquid-name transaction-
   cost trap. No new candidates queued this round — next firing will need
   a fresh search again. 29 skills shipped total.
+- 2026-07-09: searched again (checklist fully covered again). Considered
+  a generic "quant research prioritization / idea generation" candidate
+  but rejected it as too vague/overlapping with portfolio-construction-
+  small-capital's capital-matching guidance and quant-experiment-tracking
+  to justify a distinct skill. Found index-reconstitution-effect instead
+  (mechanical, price-insensitive index-tracking fund flows around
+  scheduled add/delete events, plus the overshoot/reversion pattern) —
+  genuinely distinct mechanism from all five other strategy archetypes
+  already covered. Shipped as PR #39. 30 skills shipped total; genuinely
+  new non-overlapping categories are getting very hard to find at this
+  point — a dry run is increasingly likely on upcoming firings.
