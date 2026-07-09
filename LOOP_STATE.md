@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after index-reconstitution-effect shipped)
+- `consecutive_dry_runs`: 0 (reset after macro-nowcasting-economic-surprises shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -67,6 +67,9 @@ rows here if a genuinely new category surfaces mid-loop.
   found via a tenth fresh search; sixth strategy archetype, distinct
   because it's driven by forced fund-flow mechanics rather than a price
   relationship, trend, carry, volatility, or news
+- [x] macro-nowcasting-economic-surprises (PR #40, 2026-07-09) — added
+  mid-loop, found via an eleventh fresh search; distinct signal domain
+  (macro/FX/rates, not company-specific)
 
 ## Log
 
@@ -206,3 +209,13 @@ rows here if a genuinely new category surfaces mid-loop.
   already covered. Shipped as PR #39. 30 skills shipped total; genuinely
   new non-overlapping categories are getting very hard to find at this
   point — a dry run is increasingly likely on upcoming firings.
+- 2026-07-09: searched again (checklist fully covered again). Considered
+  quantum computing for portfolio optimization but rejected it outright —
+  2026 research explicitly confirms it's impractical at small-capital
+  scale (expensive hardware access, only handles ~10-50 assets). Found
+  macro-nowcasting-economic-surprises instead (estimating macro indicators
+  from high-frequency proxies ahead of lagged official releases, trading
+  the surprise mainly via FX/rates) — a genuinely distinct signal domain,
+  since every strategy archetype so far trades individual company/
+  instrument price series or cross-sections, not macro conditions
+  themselves. Shipped as PR #40. 31 skills shipped total.
