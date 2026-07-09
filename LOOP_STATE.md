@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after options-income-strategies shipped)
+- `consecutive_dry_runs`: 0 (reset after synthetic-financial-data-augmentation shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -58,11 +58,7 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] options-income-strategies (PR #35, 2026-07-09) — added mid-loop,
   found via an eighth fresh search; fourth strategy archetype
   (short-volatility/theta harvesting)
-- [ ] synthetic-financial-data-augmentation — candidate noted during the
-  eighth search (GAN/diffusion-model-generated synthetic time series to
-  mitigate limited real historical data, complementing
-  deep-learning-forecasting-models' data-volume-vs-model-size guidance)
-  but not yet built; worth picking up next.
+- [x] synthetic-financial-data-augmentation (PR #36, 2026-07-09)
 
 ## Log
 
@@ -174,3 +170,7 @@ rows here if a genuinely new category surfaces mid-loop.
   Also noted synthetic-financial-data-augmentation (GAN/diffusion-model
   generated synthetic time series for data-scarce training) as a queued
   candidate for next time.
+- 2026-07-09: picked up the queued synthetic-financial-data-augmentation
+  candidate directly (no fresh search needed this firing). Shipped as PR
+  #36. No new candidates queued this round — next firing will need a
+  fresh search again. 27 skills shipped total.
