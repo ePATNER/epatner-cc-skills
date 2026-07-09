@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after macro-nowcasting-economic-surprises shipped)
+- `consecutive_dry_runs`: 1 (dry run 2026-07-09 — see log)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -219,3 +219,14 @@ rows here if a genuinely new category surfaces mid-loop.
   since every strategy archetype so far trades individual company/
   instrument price series or cross-sections, not macro conditions
   themselves. Shipped as PR #40. 31 skills shipped total.
+- 2026-07-09: DRY RUN. Searched for a new category; considered two
+  candidates and rejected both as insufficiently distinct/substantive.
+  (1) IPO lockup expiration effect — structurally overlaps too much with
+  index-reconstitution-effect (both are scheduled, mechanical supply-shock
+  events around a public date); the differentiating angle (insider
+  selling as a confidence signal) felt like a variation, not a genuinely
+  new mechanism. (2) Calendar/seasonality anomalies (January effect,
+  day-of-week, turn-of-month) — current research describes these as
+  largely arbitraged away or inconsistent (the January effect specifically
+  reported as having "vanished" in multiple sources), too thin a
+  foundation for a substantive new skill. consecutive_dry_runs now 1/15.
