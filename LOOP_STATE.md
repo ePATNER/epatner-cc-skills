@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after yield-curve-relative-value shipped)
+- `consecutive_dry_runs`: 0 (reset after prediction-market-event-contracts shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -83,6 +83,10 @@ rows here if a genuinely new category surfaces mid-loop.
   found via a fifteenth fresh search; new strategy dimension (interest-
   rate term structure / duration / curve-shape risk), distinct from every
   equity/crypto/commodity archetype already covered
+- [x] prediction-market-event-contracts (PR #45, 2026-07-09) — added
+  mid-loop, found via a sixteenth fresh search; fundamentally distinct
+  binary (bounded 0-1) payoff structure, unusually accessible for small
+  capital
 
 ## Log
 
@@ -279,3 +283,10 @@ rows here if a genuinely new category surfaces mid-loop.
   structure) — a genuinely new strategy dimension (duration/curve-shape
   risk) not present in any equity/crypto/commodity archetype covered so
   far. Shipped as PR #44. 35 skills shipped total.
+- 2026-07-09: searched again (checklist fully covered again). Found
+  prediction-market-event-contracts (Kalshi/Polymarket binary event
+  contracts, cross-platform arbitrage on price gaps) — a fundamentally
+  distinct payoff structure (binary, bounded 0-1) from every
+  continuously-priced instrument covered so far, and unusually accessible
+  for small capital (small minimums, no margin complexity). Shipped as PR
+  #45. 36 skills shipped total.
