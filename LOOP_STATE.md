@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after synthetic-financial-data-augmentation shipped)
+- `consecutive_dry_runs`: 0 (reset after trading-credentials-security shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -59,6 +59,15 @@ rows here if a genuinely new category surfaces mid-loop.
   found via an eighth fresh search; fourth strategy archetype
   (short-volatility/theta harvesting)
 - [x] synthetic-financial-data-augmentation (PR #36, 2026-07-09)
+- [x] trading-credentials-security (PR #37, 2026-07-09) — added mid-loop,
+  found via a ninth fresh search; fills a real operational-security gap
+  none of the prior 27 skills addressed
+- [ ] post-earnings-announcement-drift — candidate noted during the ninth
+  search (PEAD: cumulative abnormal return drift following an earnings
+  surprise, persists most where arbitrage costs are highest — small/
+  illiquid names) but not yet built; a fifth event-driven strategy
+  archetype alongside reversion/continuation/carry/options-income — worth
+  picking up next.
 
 ## Log
 
@@ -174,3 +183,11 @@ rows here if a genuinely new category surfaces mid-loop.
   candidate directly (no fresh search needed this firing). Shipped as PR
   #36. No new candidates queued this round — next firing will need a
   fresh search again. 27 skills shipped total.
+- 2026-07-09: searched again (checklist fully covered again). Noticed a
+  genuine gap: nothing in the repo covers securing the broker/exchange API
+  credentials the whole system depends on. Found
+  trading-credentials-security (key scoping, vaulting/rotation, agent-
+  specific credential-level authorization) and shipped it as PR #37 —
+  prioritized over the also-strong post-earnings-announcement-drift
+  candidate since it's a lifecycle gap rather than another strategy
+  variant. Queued PEAD as an explicit unchecked row for next time.
