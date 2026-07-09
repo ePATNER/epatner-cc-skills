@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after commodity-seasonality shipped)
+- `consecutive_dry_runs`: 0 (reset after merger-arbitrage shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -74,6 +74,10 @@ rows here if a genuinely new category surfaces mid-loop.
   via a thirteenth fresh search; seventh strategy archetype, distinct
   because it's grounded in physical supply/demand cycles rather than a
   price relationship, fund flow, drift, or behavioral effect
+- [x] merger-arbitrage (PR #42, 2026-07-09) — added mid-loop, found via a
+  fourteenth fresh search; eighth strategy archetype, distinct because the
+  return driver is binary corporate-event completion risk, unlike any
+  other archetype covered
 - [ ] dividend-capture — candidate noted during the thirteenth search
   (ex-dividend mechanical price drop, T+2 settlement lag, 60-day holding
   period tax rule) but deprioritized: the core lesson ("apparent edge
@@ -248,3 +252,11 @@ rows here if a genuinely new category surfaces mid-loop.
   lower-priority candidate (mechanically distinct but a third repetition
   of the "costs/taxes erase the naive edge" lesson). 32 skills shipped
   total.
+- 2026-07-09: searched again (checklist fully covered again). Considered
+  VIX term-structure/roll-yield trading but rejected it as too similar in
+  mechanism and risk-profile lesson to options-income-strategies (both are
+  short-volatility contango-harvesting trades with the same negative-skew
+  blowup risk already covered). Found merger-arbitrage instead
+  (deal-completion-risk spread capture) — a genuinely new risk driver
+  (binary corporate-event completion risk) not resembling any prior
+  archetype. Shipped as PR #42. 33 skills shipped total.
