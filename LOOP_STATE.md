@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after trading-credentials-security shipped)
+- `consecutive_dry_runs`: 0 (reset after post-earnings-announcement-drift shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -62,12 +62,7 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] trading-credentials-security (PR #37, 2026-07-09) — added mid-loop,
   found via a ninth fresh search; fills a real operational-security gap
   none of the prior 27 skills addressed
-- [ ] post-earnings-announcement-drift — candidate noted during the ninth
-  search (PEAD: cumulative abnormal return drift following an earnings
-  surprise, persists most where arbitrage costs are highest — small/
-  illiquid names) but not yet built; a fifth event-driven strategy
-  archetype alongside reversion/continuation/carry/options-income — worth
-  picking up next.
+- [x] post-earnings-announcement-drift (PR #38, 2026-07-09)
 
 ## Log
 
@@ -191,3 +186,8 @@ rows here if a genuinely new category surfaces mid-loop.
   prioritized over the also-strong post-earnings-announcement-drift
   candidate since it's a lifecycle gap rather than another strategy
   variant. Queued PEAD as an explicit unchecked row for next time.
+- 2026-07-09: picked up the queued post-earnings-announcement-drift
+  candidate directly (no fresh search needed this firing). Shipped as PR
+  #38, with heavy emphasis on the documented illiquid-name transaction-
+  cost trap. No new candidates queued this round — next firing will need
+  a fresh search again. 29 skills shipped total.
