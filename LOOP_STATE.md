@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after prediction-market-event-contracts shipped)
+- `consecutive_dry_runs`: 0 (reset after insider-cluster-buying-signal shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -87,6 +87,10 @@ rows here if a genuinely new category surfaces mid-loop.
   mid-loop, found via a sixteenth fresh search; fundamentally distinct
   binary (bounded 0-1) payoff structure, unusually accessible for small
   capital
+- [x] insider-cluster-buying-signal (PR #46, 2026-07-09) — added
+  mid-loop, found via a seventeenth fresh search; dedicated treatment of a
+  signal source only briefly mentioned before, with a specific filing-lag
+  point-in-time pitfall
 
 ## Log
 
@@ -290,3 +294,13 @@ rows here if a genuinely new category surfaces mid-loop.
   continuously-priced instrument covered so far, and unusually accessible
   for small capital (small minimums, no margin complexity). Shipped as PR
   #45. 36 skills shipped total.
+- 2026-07-09: searched again (checklist fully covered again). Considered
+  dispersion trading (index vs. single-stock implied volatility/
+  correlation) but rejected it as too capital-intensive — requires
+  simultaneous options margin across dozens of single-name legs plus an
+  index leg, similar disqualification to convertible arbitrage. Found
+  insider-cluster-buying-signal instead (SEC Form 4 cluster-buy detection)
+  — a dedicated treatment of a signal source alternative-data-ingestion
+  only mentioned in passing, with a documented small/mid-cap concentration
+  and a specific filing-lag point-in-time pitfall. Shipped as PR #46. 37
+  skills shipped total.
