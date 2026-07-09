@@ -5,7 +5,7 @@ PRs against `epatner-cc-skills`. This branch is never merged and never
 opened as a PR — it's just the loop's memory across firings.
 
 - `cron_job_id`: 65b6d83e
-- `consecutive_dry_runs`: 0 (reset after automated-alpha-mining shipped)
+- `consecutive_dry_runs`: 0 (reset after cross-sectional-equity-factor-investing shipped)
 - `interval`: 30 minutes
 - `stop_conditions`: 15 consecutive dry runs, OR every category below is
   covered and a fresh search for additional categories also turns up nothing
@@ -54,12 +54,7 @@ rows here if a genuinely new category surfaces mid-loop.
 - [x] automated-alpha-mining (PR #33, 2026-07-09) — added mid-loop, found
   via a seventh fresh search; LLM-driven/evolutionary candidate-signal
   search as its own meta-process, distinct from any single technique
-- [ ] cross-sectional-equity-factor-investing — candidate noted during the
-  seventh search (rank many instruments against each other — value/
-  quality/size deciles, long top rank/short bottom rank — distinct from
-  the time-series signals in trend-following-momentum and
-  statistical-arbitrage-pairs-trading) but not yet built; worth picking up
-  next.
+- [x] cross-sectional-equity-factor-investing (PR #34, 2026-07-09)
 
 ## Log
 
@@ -158,3 +153,8 @@ rows here if a genuinely new category surfaces mid-loop.
   investing (rank instruments against each other rather than forecasting
   each individually). Shipped the former as PR #33; queued the latter as
   an explicit unchecked row for next time.
+- 2026-07-09: picked up the queued cross-sectional-equity-factor-investing
+  candidate directly (no fresh search needed this firing). Shipped as PR
+  #34. No new candidates queued this round — next firing will need a
+  fresh search again. 25 skills shipped total; the checklist has grown
+  well beyond its original 15-item seed via mid-loop discovery.
