@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`yield-curve-relative-value`](skills/yield-curve-relative-value/SKILL.md) | _(draft, pending review)_ Steepener/flattener and roll-down/carry curve trades, with duration-aware sizing for small capital. |
 | [`dividend-capture`](skills/dividend-capture/SKILL.md) | _(draft, pending review)_ Ex-dividend capture mechanics, with the near-zero-edge-by-design reality and tax/settlement traps made explicit. |
 | [`merger-arbitrage`](skills/merger-arbitrage/SKILL.md) | _(draft, pending review)_ Deal-completion-risk spread capture, with the small-account diversification constraint made explicit. |
 | [`commodity-seasonality`](skills/commodity-seasonality/SKILL.md) | _(draft, pending review)_ Physically-grounded commodity seasonal patterns (harvest/heating/inventory cycles), distinct from thin behavioral calendar effects. |
