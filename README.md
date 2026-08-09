@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`trading-credentials-security`](skills/trading-credentials-security/SKILL.md) | _(draft, pending review)_ Scope, vault, and rotate broker/exchange API keys; credential-level (not just instruction-level) scoping for agent-operated systems. |
 | [`synthetic-financial-data-augmentation`](skills/synthetic-financial-data-augmentation/SKILL.md) | _(draft, pending review)_ GAN/diffusion-generated synthetic data for scarce training history, with the tail-narrowing failure mode made explicit. |
 | [`options-income-strategies`](skills/options-income-strategies/SKILL.md) | _(draft, pending review)_ Systematic premium-selling (covered calls, credit spreads, capital-efficient variants) with the negative-skew risk profile made explicit. |
 | [`cross-sectional-equity-factor-investing`](skills/cross-sectional-equity-factor-investing/SKILL.md) | _(draft, pending review)_ Rank-based long-short/long-only-tilt factor investing, with small-account short-access constraints called out. |
