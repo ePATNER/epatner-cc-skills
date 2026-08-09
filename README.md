@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`merger-arbitrage`](skills/merger-arbitrage/SKILL.md) | _(draft, pending review)_ Deal-completion-risk spread capture, with the small-account diversification constraint made explicit. |
 | [`commodity-seasonality`](skills/commodity-seasonality/SKILL.md) | _(draft, pending review)_ Physically-grounded commodity seasonal patterns (harvest/heating/inventory cycles), distinct from thin behavioral calendar effects. |
 | [`macro-nowcasting-economic-surprises`](skills/macro-nowcasting-economic-surprises/SKILL.md) | _(draft, pending review)_ Nowcast macro indicators from high-frequency proxies and trade the surprise, with strict point-in-time revision discipline. |
 | [`index-reconstitution-effect`](skills/index-reconstitution-effect/SKILL.md) | _(draft, pending review)_ Trade mechanical index add/delete fund-flow pressure and its overshoot/reversion pattern. |
