@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`statistical-arbitrage-pairs-trading`](skills/statistical-arbitrage-pairs-trading/SKILL.md) | _(draft, pending review)_ Cointegration-based pairs/basket mean-reversion strategy design, distinct from correlation-only approaches. |
 | [`tail-risk-hedging`](skills/tail-risk-hedging/SKILL.md) | _(draft, pending review)_ Explicit, small-sized protection against correlation-breakdown tail events, distinct from normal-times sizing/diversification. |
 | [`market-microstructure-signals`](skills/market-microstructure-signals/SKILL.md) | _(draft, pending review)_ Order-flow imbalance/toxicity signals from order-book data, with heavy emphasis on cost-sensitivity and data feasibility. |
 | [`signal-ensembling`](skills/signal-ensembling/SKILL.md) | _(draft, pending review)_ Combine multiple models/signals via voting, blending, or validated stacking to cut variance, not chase complexity. |
