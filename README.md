@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`financial-feature-engineering`](skills/financial-feature-engineering/SKILL.md) | _(draft, pending review)_ Fractional differencing for stationarity without losing memory; triple-barrier + meta-labeling for realistic targets. |
 | [`classical-statistical-forecasting`](skills/classical-statistical-forecasting/SKILL.md) | _(draft, pending review)_ Know when ARIMA/GARCH/regime-switching models beat or complement a deep model. |
 | [`deep-learning-forecasting-models`](skills/deep-learning-forecasting-models/SKILL.md) | _(draft, pending review)_ Pick and correctly train a DL forecasting architecture sized to your data, without silent overfitting. |
 | [`news-sentiment-analysis`](skills/news-sentiment-analysis/SKILL.md) | _(draft, pending review)_ Build a news/text-to-signal pipeline: ingestion, scoring cascade, event tagging, decay, normalization. |
