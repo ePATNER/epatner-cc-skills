@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`options-income-strategies`](skills/options-income-strategies/SKILL.md) | _(draft, pending review)_ Systematic premium-selling (covered calls, credit spreads, capital-efficient variants) with the negative-skew risk profile made explicit. |
 | [`cross-sectional-equity-factor-investing`](skills/cross-sectional-equity-factor-investing/SKILL.md) | _(draft, pending review)_ Rank-based long-short/long-only-tilt factor investing, with small-account short-access constraints called out. |
 | [`automated-alpha-mining`](skills/automated-alpha-mining/SKILL.md) | _(draft, pending review)_ LLM-driven/evolutionary candidate-signal search, with guardrails against the multiple-testing risk it multiplies. |
 | [`model-retraining-cadence`](skills/model-retraining-cadence/SKILL.md) | _(draft, pending review)_ Scheduled + drift-triggered retraining with safe shadow/canary rollout, distinct from the kill-switch decision. |
