@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`signal-ensembling`](skills/signal-ensembling/SKILL.md) | _(draft, pending review)_ Combine multiple models/signals via voting, blending, or validated stacking to cut variance, not chase complexity. |
 | [`explainability-audit-documentation`](skills/explainability-audit-documentation/SKILL.md) | _(draft, pending review)_ SHAP-style attribution and a timestamped decision log, scoped for a small operation (not a compliance substitute). |
 | [`small-account-execution`](skills/small-account-execution/SKILL.md) | _(draft, pending review)_ Order-type choice, broker API reliability, and small-account regulatory awareness for the execution layer. |
 | [`strategy-testing-validation`](skills/strategy-testing-validation/SKILL.md) | _(draft, pending review)_ Unit/integration-test pipeline code, sanity-check data, and stage rollout through paper/shadow before real capital. |
