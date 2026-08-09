@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`quant-experiment-tracking`](skills/quant-experiment-tracking/SKILL.md) | _(draft, pending review)_ Log every hypothesis/trial (including failures) so multiple-testing correction and reproducibility are honest. |
 | [`live-backtest-drift-monitoring`](skills/live-backtest-drift-monitoring/SKILL.md) | _(draft, pending review)_ Detect alpha decay/live-backtest divergence and use pre-committed kill switches instead of in-the-moment calls. |
 | [`regime-detection`](skills/regime-detection/SKILL.md) | _(draft, pending review)_ HMM-based regime detection to resize/switch strategies, with guardrails against regime-blind backtests. |
 | [`alternative-data-ingestion`](skills/alternative-data-ingestion/SKILL.md) | _(draft, pending review)_ Source realistic alt-data at small scale and vet it for point-in-time integrity before trusting a backtest. |
