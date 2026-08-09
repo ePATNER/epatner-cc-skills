@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`model-retraining-cadence`](skills/model-retraining-cadence/SKILL.md) | _(draft, pending review)_ Scheduled + drift-triggered retraining with safe shadow/canary rollout, distinct from the kill-switch decision. |
 | [`funding-rate-arbitrage`](skills/funding-rate-arbitrage/SKILL.md) | _(draft, pending review)_ Delta-neutral funding/basis carry strategies, with rate-flip, basis, and execution risk made explicit. |
 | [`trend-following-momentum`](skills/trend-following-momentum/SKILL.md) | _(draft, pending review)_ Time-series momentum/breakout strategy design with explicit whipsaw/regime-filter guardrails. |
 | [`event-driven-backtesting-engine-architecture`](skills/event-driven-backtesting-engine-architecture/SKILL.md) | _(draft, pending review)_ Vectorized-vs-event-driven simulator design with engine-level point-in-time enforcement. |
