@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`alternative-data-ingestion`](skills/alternative-data-ingestion/SKILL.md) | _(draft, pending review)_ Source realistic alt-data at small scale and vet it for point-in-time integrity before trusting a backtest. |
 | [`portfolio-construction-small-capital`](skills/portfolio-construction-small-capital/SKILL.md) | _(draft, pending review)_ Combine multiple micro-strategies by risk contribution, with honest overlap/correlation checks. |
 | [`position-sizing-risk-management`](skills/position-sizing-risk-management/SKILL.md) | _(draft, pending review)_ Fractional Kelly/fixed-fractional sizing, portfolio heat caps, and mechanical drawdown rules. |
 | [`transaction-cost-slippage-modeling`](skills/transaction-cost-slippage-modeling/SKILL.md) | _(draft, pending review)_ Model spread/commission/slippage/impact sized correctly for account size, not a zero-cost backtest. |
