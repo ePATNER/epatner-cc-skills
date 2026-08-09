@@ -1,18 +1,19 @@
 # Changelog
 
-All notable changes to this repository will be documented in this file.
+All notable changes to this repository are documented here.
 
 ## 1.0.0 - 2026-08-09
 
 ### Added
-- marketplace-style root metadata with plugin manifests and catalog indexing
-- grouped plugin structure for engineering workflows and quantitative research skills
-- release automation scaffolding inspired by a semantic-release workflow
+- a marketplace-style repository structure with root metadata, plugin manifests, and catalog indexing
+- a dedicated engineering-workflows plugin for planning, debugging, review, testing, and release discipline
+- a dedicated quant-research plugin for quantitative strategy research, validation, execution, and portfolio operations
+- semantic-release scaffolding for preflight validation, manifest synchronization, changelog updates, tagging, and hosted release publication
 
 ### Changed
-- reorganized standalone skills into plugin-scoped skill directories
-- rewrote repository documentation and metadata for a neutral, repository-first presentation
+- reorganized standalone skill directories into plugin-scoped packages
+- rewrote repository metadata and documentation for an organization-owned, public release presentation
 
 ### Removed
-- product-specific statusline assets and provider-specific packaging files
-- repository content that explicitly attributed authorship to automated systems
+- provider-specific packaging and statusline assets that did not belong in the public marketplace release surface
+- explicit automated-authorship attribution from the published repository surface and released history

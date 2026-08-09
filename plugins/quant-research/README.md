@@ -1,6 +1,6 @@
 # quant-research
 
-Quantitative research and trading workflow skills for factor research, forecasting, backtesting discipline, execution, and portfolio operations.
+Quantitative research and trading workflow skills for signal research, forecasting, validation discipline, execution, and portfolio operations.
 
 ## Skill Groups
 

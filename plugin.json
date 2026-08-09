@@ -1,18 +1,19 @@
 {
   "name": "skills",
   "version": "1.0.0",
-  "description": "Marketplace-style collection of reusable skills for engineering, research, and operations",
+  "description": "Marketplace-style skill library for engineering workflows, quantitative research, and release operations",
   "author": {
-    "name": "ePATNER",
-    "url": "https://github.com/epatner"
+    "name": "ePATNER Labs",
+    "url": "https://github.com/ePATNER-LAB"
   },
   "license": "MIT",
-  "repository": "https://github.com/epatner/skills",
+  "repository": "https://github.com/ePATNER-LAB/skills",
   "keywords": [
     "skills",
-    "workflows",
-    "engineering",
-    "research",
-    "operations"
-  ]
+    "engineering-workflows",
+    "quant-research",
+    "release-automation",
+    "developer-tools"
+  ],
+  "homepage": "https://epatner.com"
 }

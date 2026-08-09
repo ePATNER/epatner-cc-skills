@@ -1,6 +1,6 @@
 # engineering-workflows
 
-Engineering workflow skills for planning, debugging, reviews, delivery sequencing, and safe execution.
+Reusable workflow skills for planning, debugging, reviews, release discipline, and safe execution.
 
 ## Skills
 
@@ -8,6 +8,7 @@ Engineering workflow skills for planning, debugging, reviews, delivery sequencin
 |---|---|
 | `brainstorming` | Turn ambiguous requests into agreed designs before implementation. |
 | `receiving-code-review` | Triage review feedback by validity and scope. |
+| `release-management` | Run a clean release flow with preflight checks, dry runs, changelog verification, and tag validation. |
 | `skill-creator` | Draft new reusable skill files with clear triggers and guardrails. |
 | `subagent-driven-development` | Hand planned work to separate implementation and review flows. |
 | `systematic-debugging` | Run a reproduce → localize → root-cause → verify debugging loop. |

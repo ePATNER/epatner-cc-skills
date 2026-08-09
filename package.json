@@ -2,12 +2,12 @@
   "name": "skills",
   "version": "1.0.0",
   "private": true,
-  "description": "Marketplace-style collection of reusable skills",
-  "author": "ePATNER",
+  "description": "Marketplace-style skill library for engineering workflows, quantitative research, and release operations",
+  "author": "ePATNER Labs",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/epatner/skills.git"
+    "url": "https://github.com/ePATNER-LAB/skills.git"
   },
   "engines": {
     "node": ">=22.0.0"
@@ -26,5 +26,14 @@
     "@semantic-release/github": "^11.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
     "semantic-release": "^25.0.0"
-  }
+  },
+  "homepage": "https://epatner.com",
+  "keywords": [
+    "skills",
+    "engineering-workflows",
+    "quant-research",
+    "release-automation",
+    "developer-tools",
+    "workflow-automation"
+  ]
 }

@@ -1,9 +1,10 @@
 {
   "name": "engineering-workflows",
   "version": "1.0.0",
-  "description": "Reusable engineering workflow skills for planning, debugging, reviews, and delivery discipline.",
+  "description": "Reusable workflow skills for planning, debugging, reviews, release discipline, and safe execution.",
   "author": {
-    "name": "ePATNER",
-    "url": "https://github.com/epatner"
-  }
+    "name": "ePATNER Labs",
+    "url": "https://github.com/ePATNER-LAB"
+  },
+  "homepage": "https://epatner.com"
 }
