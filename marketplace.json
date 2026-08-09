@@ -1,0 +1,49 @@
+{
+  "name": "skills",
+  "version": "1.0.0",
+  "description": "Marketplace-style collection of reusable skills",
+  "owner": {
+    "name": "ePATNER",
+    "url": "https://github.com/epatner"
+  },
+  "plugins": [
+    {
+      "name": "engineering-workflows",
+      "description": "Reusable engineering workflow skills for planning, debugging, reviews, and delivery discipline.",
+      "version": "1.0.0",
+      "source": "./plugins/engineering-workflows",
+      "category": "development",
+      "author": {
+        "name": "ePATNER",
+        "url": "https://github.com/epatner"
+      },
+      "keywords": [
+        "engineering",
+        "workflow",
+        "planning",
+        "debugging",
+        "review"
+      ],
+      "strict": false
+    },
+    {
+      "name": "quant-research",
+      "description": "Quantitative research, trading, and portfolio workflow skills for signal research, validation, and operations.",
+      "version": "1.0.0",
+      "source": "./plugins/quant-research",
+      "category": "trading",
+      "author": {
+        "name": "ePATNER",
+        "url": "https://github.com/epatner"
+      },
+      "keywords": [
+        "quant",
+        "trading",
+        "research",
+        "portfolio",
+        "signals"
+      ],
+      "strict": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# engineering-workflows
+
+Engineering workflow skills for planning, debugging, reviews, delivery sequencing, and safe execution.
+
+## Skills
+
+| Skill | Purpose |
+|---|---|
+| `brainstorming` | Turn ambiguous requests into agreed designs before implementation. |
+| `receiving-code-review` | Triage review feedback by validity and scope. |
+| `skill-creator` | Draft new reusable skill files with clear triggers and guardrails. |
+| `subagent-driven-development` | Hand planned work to separate implementation and review flows. |
+| `systematic-debugging` | Run a reproduce → localize → root-cause → verify debugging loop. |
+| `test-driven-development` | Drive changes with failing tests before implementation. |
+| `using-git-worktrees` | Manage parallel work with isolated git worktrees. |
+| `writing-plans` | Break large work into verifiable, ordered steps. |
+
+## Layout
+
+```text
+plugins/engineering-workflows/
+  README.md
+  plugin.json
+  skills/
+    <skill>/
+      SKILL.md
+```

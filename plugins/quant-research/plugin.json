@@ -1,0 +1,9 @@
+{
+  "name": "quant-research",
+  "version": "1.0.0",
+  "description": "Quantitative research, trading, and portfolio workflow skills for signal research, validation, and operations.",
+  "author": {
+    "name": "ePATNER",
+    "url": "https://github.com/epatner"
+  }
+}

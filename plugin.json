@@ -1,0 +1,18 @@
+{
+  "name": "skills",
+  "version": "1.0.0",
+  "description": "Marketplace-style collection of reusable skills for engineering, research, and operations",
+  "author": {
+    "name": "ePATNER",
+    "url": "https://github.com/epatner"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/epatner/skills",
+  "keywords": [
+    "skills",
+    "workflows",
+    "engineering",
+    "research",
+    "operations"
+  ]
+}
