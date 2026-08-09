@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`insider-cluster-buying-signal`](skills/insider-cluster-buying-signal/SKILL.md) | _(draft, pending review)_ Detect Form 4 insider cluster buying as a screening signal, with strict filing-date point-in-time discipline. |
 | [`prediction-market-event-contracts`](skills/prediction-market-event-contracts/SKILL.md) | _(draft, pending review)_ Binary event-contract trading (Kalshi/Polymarket) and cross-platform arbitrage, with a "not gambling" risk discipline. |
 | [`yield-curve-relative-value`](skills/yield-curve-relative-value/SKILL.md) | _(draft, pending review)_ Steepener/flattener and roll-down/carry curve trades, with duration-aware sizing for small capital. |
 | [`dividend-capture`](skills/dividend-capture/SKILL.md) | _(draft, pending review)_ Ex-dividend capture mechanics, with the near-zero-edge-by-design reality and tax/settlement traps made explicit. |
