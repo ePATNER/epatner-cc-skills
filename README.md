@@ -18,6 +18,7 @@ ln -s "$PWD/skills/<name>" ~/.claude/skills/<name>
 | Skill | Purpose |
 |-------|---------|
 | [`statusline-builder`](skills/statusline-builder/SKILL.md) | Build & install a SOTA, git-aware Claude Code status line (model · dir · git; context bar · cost · 5h/7d quota). |
+| [`macro-nowcasting-economic-surprises`](skills/macro-nowcasting-economic-surprises/SKILL.md) | _(draft, pending review)_ Nowcast macro indicators from high-frequency proxies and trade the surprise, with strict point-in-time revision discipline. |
 | [`index-reconstitution-effect`](skills/index-reconstitution-effect/SKILL.md) | _(draft, pending review)_ Trade mechanical index add/delete fund-flow pressure and its overshoot/reversion pattern. |
 | [`post-earnings-announcement-drift`](skills/post-earnings-announcement-drift/SKILL.md) | _(draft, pending review)_ Earnings-surprise drift strategy, with the illiquid-name transaction-cost trap made explicit. |
 | [`trading-credentials-security`](skills/trading-credentials-security/SKILL.md) | _(draft, pending review)_ Scope, vault, and rotate broker/exchange API keys; credential-level (not just instruction-level) scoping for agent-operated systems. |
