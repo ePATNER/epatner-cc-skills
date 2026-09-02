@@ -44,6 +44,23 @@
         "signals"
       ],
       "strict": false
+    },
+    {
+      "name": "claude-code-tools",
+      "description": "Claude Code CLI-specific runtime tooling (status line) kept separate from the portable, tool-agnostic engineering-workflows skills.",
+      "version": "1.0.0",
+      "source": "./plugins/claude-code-tools",
+      "category": "development",
+      "author": {
+        "name": "ePATNER Labs",
+        "url": "https://github.com/ePATNER-LAB"
+      },
+      "keywords": [
+        "claude-code",
+        "statusline",
+        "developer-tools"
+      ],
+      "strict": false
     }
   ]
 }

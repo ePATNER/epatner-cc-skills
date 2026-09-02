@@ -14,6 +14,7 @@ This repository is organized as a catalog of plugin-style skill packs. Each plug
 |---|---|---|
 | `engineering-workflows` | Planning, debugging, review, release, and execution discipline | `plugins/engineering-workflows/` |
 | `quant-research` | Quant research, strategy validation, portfolio construction, and trading operations | `plugins/quant-research/` |
+| `claude-code-tools` | Claude Code CLI-specific runtime tooling (status line) | `plugins/claude-code-tools/` |
 
 ## Why this repository exists
 
@@ -44,6 +45,10 @@ plugins/
     plugin.json
     skills/
   quant-research/
+    README.md
+    plugin.json
+    skills/
+  claude-code-tools/
     README.md
     plugin.json
     skills/
