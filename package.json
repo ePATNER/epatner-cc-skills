@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ePATNER-LAB/skills.git"
+    "url": "https://github.com/epatnerlab/skills.git"
   },
   "engines": {
     "node": ">=22.0.0"
