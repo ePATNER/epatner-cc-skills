@@ -7,6 +7,7 @@ Reusable workflow skills for planning, debugging, reviews, release discipline, a
 | Skill | Purpose |
 |---|---|
 | `brainstorming` | Turn ambiguous requests into agreed designs before implementation. |
+| `mise-release-automation` | Scaffold a mise-orchestrated semantic-release pipeline (single-version or independently-versioned streams) in a repo that doesn't have one yet. |
 | `receiving-code-review` | Triage review feedback by validity and scope. |
 | `release-management` | Run a clean release flow with preflight checks, dry runs, changelog verification, and tag validation. |
 | `skill-creator` | Draft new reusable skill files with clear triggers and guardrails. |
